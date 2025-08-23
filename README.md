@@ -40,6 +40,12 @@ python -c "import torch, flash_attn; print('torch', torch.__version__, 'cuda', t
 micromamba activate comfy
 pip install wheels/flash_attn-2.8.2-cp311-cp311-linux_x86_64.whl
 ```
+### Using with Comfy-Deploy
+- Ensure your ComfyUI environment uses Python 3.11.
+- Activate your environment, then install the wheel:
+```bash
+RUN pip install https://github.com/if-ai/cd_wheels/raw/main/wheels/flash_attn-2.8.2-cp311-cp311-linux_x86_64.whl
+```
 
 ### Build from source (reproducible)
 This repo includes a script to build the wheel on Ubuntu 22.04 with CUDA available at `/usr/local/cuda` and NVCC on `PATH`.
