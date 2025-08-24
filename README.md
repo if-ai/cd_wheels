@@ -4,7 +4,7 @@ cd_wheels — FlashAttention wheels (Ubuntu 22.04, CUDA 12.x, CPython 3.11)
 - Prebuilt and reproducible build instructions for FlashAttention v2.8.2 wheels targeting Linux x86_64 (Ubuntu 22.04), CUDA 12.x, and Python 3.11.
 
 ### Included wheels
-- `wheels/flash_attn-2.8.2-cp311-cp311-linux_x86_64.whl`
+- `wheels/flash_attn-2.8.2-cp311-cp311-linux_x86_64_comfy.whl`
 
 
 ### Requirements and compatibility
@@ -29,13 +29,13 @@ python -c "import torch, flash_attn; print('torch', torch.__version__, 'cuda', t
 - Activate your environment, then install the wheel:
 ```bash
 micromamba activate comfy
-pip install wheels/flash_attn-2.8.2-cp311-cp311-linux_x86_64.whl
+pip install wheels/flash_attn-2.8.2-cp311-cp311-linux_x86_64_comfy.whl
 ```
 ### Using with Comfy-Deploy
 - Ensure your ComfyUI environment uses Python 3.11.
 - Activate your environment, then install the wheel:
 ```bash
-RUN pip install https://github.com/if-ai/cd_wheels/raw/main/wheels/flash_attn-2.8.2-cp311-cp311-linux_x86_64.whl
+RUN pip install https://github.com/if-ai/cd_wheels/raw/main/wheels/flash_attn-2.8.2-cp311-cp311-linux_x86_64_comfy.whl
 ```
 
 
